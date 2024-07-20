@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: url(images/desk-.jpg);
+  background-position: center;
+  background-size: cover;
+  font-family: sans-serif;
+}
+.menu-bar {
+  text-align: right;
+}
+.menu-bar ul {
+  list-style: none;
+  display: inline-flex;
+}
+
+.menu-bar ul li {
+  padding: 10px;
+  margin: 10px;
+  width: 100px;
+}
+.menu-bar ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 13px;
+}
+.menu-bar ul li::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: #f44336;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+.menu-bar ul li:hover::after {
+  width: 100%;
+}
